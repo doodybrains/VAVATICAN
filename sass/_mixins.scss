@@ -1,0 +1,87 @@
+/*
+  Colors
+*/
+$black: #000;
+$black_text: #000;
+$red: #f22424;
+$yellow: #fffbcf;
+$blue: #057e86;
+$dark_purple: #360586;
+
+/*
+  Base sizing
+*/
+$font_base: 16px; /* 16 is a sensible base. Leave this value. */
+$browser_base: 1024px;
+
+/*
+  Defaults
+*/
+$bg_color: #fff;
+$main_text_color: $black_text;
+
+$a_link: $black_text;
+$a_visited: $black_text;
+$a_hover: $red;
+$selection_highlight: $black_text;
+$selection_text: #fff;
+
+/*
+  Mixins
+*/
+@mixin css3-transition($attr, $duration) {
+  transition: $attr $duration ease-in-out;
+  -moz-transition: $attr $duration ease-in-out;
+  -webkit-transition: $attr $duration ease-in-out;
+}
+
+@mixin border-radius($radius_tl, $radius_tr, $radius_br, $radius_bl) {
+  -webkit-border-top-left-radius: $radius_tl;
+  -webkit-border-top-right-radius: $radius_tr;
+  -webkit-border-bottom-right-radius: $radius_br;
+  -webkit-border-bottom-left-radius: $radius_bl;
+  -moz-border-radius-topleft: $radius_tl;
+  -moz-border-radius-topright: $radius_tr;
+  -moz-border-radius-bottomright: $radius_br;
+  -moz-border-radius-bottomleft: $radius_bl;
+  border-top-left-radius: $radius_tl;
+  border-top-right-radius: $radius_tr;
+  border-bottom-right-radius: $radius_br;
+  border-bottom-left-radius: $radius_bl;
+}
+
+@mixin box-shadow($offset_l, $offset_t, $blur_d, $spread_d, $shadow_color) {
+  -moz-box-shadow: $offset_l $offset_t $blur_d $spread_d $shadow_color;
+  -webkit-box-shadow: $offset_l $offset_t $blur_d $spread_d $shadow_color;
+  box-shadow: $offset_l $offset_t $blur_d $spread_d $shadow_color;
+}
+
+@mixin gradient-linear($top_c: #fff, $bottom_c: $gray, $bg_c: $gray) {
+  background: $bg_c;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$top_c}', endColorstr='#{$bottom_c}',GradientType=0 );
+  background: -webkit-gradient(linear, left top, left bottom, from($top_c), to($bottom_c));
+  background: -moz-linear-gradient(top, $top_c,  $bottom_c);
+}
+
+@mixin box-sizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  filter: alpha(opacity=$opacity*100);
+}
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content:"";
+    display: table;
+  }
+  &:after { clear:both; }
+  & { *zoom:1; }
+}
+
+

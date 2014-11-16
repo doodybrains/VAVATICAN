@@ -1,0 +1,312 @@
+/*
+  Colors
+*/
+/*
+  Base sizing
+*/
+/* 16 is a sensible base. Leave this value. */
+/*
+  Defaults
+*/
+/*
+  Mixins
+*/
+/* line 3, ../sass/style.scss */
+a {
+  color: #000;
+  text-decoration: none;
+}
+/* line 7, ../sass/style.scss */
+a:visited {
+  color: #000;
+}
+/* line 11, ../sass/style.scss */
+a:hover {
+  color: #f22424;
+}
+/* line 15, ../sass/style.scss */
+a[href^=tel] {
+  border-bottom: none;
+}
+
+/* line 20, ../sass/style.scss */
+.inner {
+  padding: 15px;
+  font-family: "alternate-gothic-no-2-d";
+}
+/* line 24, ../sass/style.scss */
+.inner .top {
+  position: relative;
+}
+/* line 28, ../sass/style.scss */
+.inner h1 {
+  font-size: 3em;
+}
+/* line 32, ../sass/style.scss */
+.inner .menu-box {
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+  display: none;
+  height: auto;
+  position: fixed;
+  top: 94px;
+  text-align: right;
+  text-transform: uppercase;
+  width: 100%;
+  z-index: 9999;
+}
+/* line 44, ../sass/style.scss */
+.inner .menu-box > li {
+  font-size: 2em;
+  padding: 15px 30px 15px 15px;
+}
+@media screen and (min-width: 768px) {
+  /* line 20, ../sass/style.scss */
+  .inner {
+    padding: 60px;
+  }
+  /* line 53, ../sass/style.scss */
+  .inner h1 {
+    font-size: 4em;
+  }
+  /* line 57, ../sass/style.scss */
+  .inner .menu-box {
+    top: 130px;
+  }
+  /* line 60, ../sass/style.scss */
+  .inner .menu-box > li {
+    font-size: 3em;
+    padding: 15px 120px 15px 15px;
+  }
+}
+
+/* line 68, ../sass/style.scss */
+.menu {
+  position: fixed;
+  top: 28px;
+  right: 15px;
+}
+
+/* line 74, ../sass/style.scss */
+.button-close {
+  cursor: pointer;
+  display: block;
+  padding: 0 8px 8px 8px;
+}
+/* line 79, ../sass/style.scss */
+.button-close .icon {
+  background-image: url("../images/sprite.png");
+  background-position: 0 -620px;
+  background-repeat: no-repeat;
+  height: 27px;
+  width: 27px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* line 90, ../sass/style.scss */
+.menu .button-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+/* line 97, ../sass/style.scss */
+.button {
+  position: relative;
+  padding: 8px;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+}
+/* line 104, ../sass/style.scss */
+.button > .line {
+  position: absolute;
+  left: 8px;
+  display: block;
+  width: 27px;
+  height: 3px;
+  background: #000;
+}
+/* line 113, ../sass/style.scss */
+.button > .line:nth-child(1) {
+  top: 0px;
+}
+/* line 117, ../sass/style.scss */
+.button > .line:nth-child(2) {
+  top: 10px;
+}
+/* line 121, ../sass/style.scss */
+.button > .line:nth-child(3) {
+  top: 20px;
+}
+
+/* line 126, ../sass/style.scss */
+.menu .button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 133, ../sass/style.scss */
+.content {
+  overflow: hidden;
+}
+/* line 136, ../sass/style.scss */
+.content img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+/* line 142, ../sass/style.scss */
+.content p {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+/* line 148, ../sass/style.scss */
+.content .artist {
+  margin-bottom: 15px;
+}
+/* line 151, ../sass/style.scss */
+.content .artist .text {
+  text-align: right;
+  color: #000;
+  font-size: 1.5em;
+  width: 100%;
+}
+/* line 159, ../sass/style.scss */
+.content .detail {
+  width: 100%;
+}
+/* line 162, ../sass/style.scss */
+.content .detail .hero {
+  position: relative;
+  margin-bottom: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 78, ../sass/_mixins.scss */
+.content .detail .hero:before, .content .detail .hero:after {
+  content: "";
+  display: table;
+}
+/* line 83, ../sass/_mixins.scss */
+.content .detail .hero:after {
+  clear: both;
+}
+/* line 84, ../sass/_mixins.scss */
+.content .detail .hero {
+  *zoom: 1;
+}
+/* line 168, ../sass/style.scss */
+.content .detail .hero > img {
+  float: left;
+  width: 60%;
+  margin-right: 30px;
+}
+/* line 174, ../sass/style.scss */
+.content .detail .hero > h2 {
+  font-size: 1.2em;
+}
+/* line 178, ../sass/style.scss */
+.content .detail .hero > h4 {
+  font-size: .8675em;
+}
+/* line 185, ../sass/style.scss */
+.content .detail .grid .row {
+  margin-bottom: 30px;
+  height: 100px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 78, ../sass/_mixins.scss */
+.content .detail .grid .row:before, .content .detail .grid .row:after {
+  content: "";
+  display: table;
+}
+/* line 83, ../sass/_mixins.scss */
+.content .detail .grid .row:after {
+  clear: both;
+}
+/* line 84, ../sass/_mixins.scss */
+.content .detail .grid .row {
+  *zoom: 1;
+}
+/* line 194, ../sass/style.scss */
+.content .detail .grid .row > a img {
+  width: 40%;
+  padding: 5%;
+  float: left;
+}
+/* line 204, ../sass/style.scss */
+.content .backtop {
+  background-image: url("../images/sprite.png");
+  background-position: 0 -586px;
+  background-repeat: no-repeat;
+  height: 27px;
+  width: 46px;
+  vertical-align: middle;
+  display: block;
+  margin: 15px auto;
+}
+/* line 215, ../sass/style.scss */
+.content .back {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  /* line 133, ../sass/style.scss */
+  .content {
+    padding-top: 0;
+  }
+  /* line 222, ../sass/style.scss */
+  .content p {
+    font-size: 2em;
+    margin-bottom: 60px;
+  }
+  /* line 227, ../sass/style.scss */
+  .content .artist {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  /* line 232, ../sass/style.scss */
+  .content .artist .text {
+    font-size: 2.5em;
+    top: 60px;
+    left: 60px;
+    padding: 16px 0 14px 28px;
+  }
+}
+/* line 243, ../sass/style.scss */
+.content .detail .hero {
+  margin-bottom: 60px;
+}
+/* line 246, ../sass/style.scss */
+.content .detail .hero > img {
+  width: 40%;
+  margin-right: 60px;
+}
+/* line 251, ../sass/style.scss */
+.content .detail .hero > h2 {
+  font-size: 2.5em;
+}
+/* line 255, ../sass/style.scss */
+.content .detail .hero > h4 {
+  font-size: 1em;
+}
+/* line 262, ../sass/style.scss */
+.content .detail .grid .row {
+  margin-bottom: 60px;
+  height: 250px;
+}
+/* line 268, ../sass/style.scss */
+.content .detail .grid .row > a img {
+  width: 40%;
+  padding: 5%;
+  float: left;
+}
