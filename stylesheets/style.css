@@ -30,7 +30,78 @@ a[href^=tel] {
 }
 
 /* line 20, ../sass/style.scss */
-.inner {
-  padding: 15px;
+html {
+  background: url("../images/image.jpg") center center fixed no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 27, ../sass/style.scss */
+html h1, html h2, html h3, html h4 {
+  margin: 0;
+}
+/* line 31, ../sass/style.scss */
+html h1 {
+  font-family: "franklin-gothic-urw-comp";
+  font-size: 3em;
+  color: #fff;
+}
+/* line 37, ../sass/style.scss */
+html h2 {
+  font-family: "ocr-a-std";
+}
+/* line 41, ../sass/style.scss */
+html h3 {
   font-family: "brandon-grotesque";
+}
+/* line 45, ../sass/style.scss */
+html h4 {
+  font-family: "museo-sans-rounded";
+}
+
+/* line 51, ../sass/style.scss */
+.container {
+  padding: 15px;
+}
+/* line 54, ../sass/style.scss */
+.container .left {
+  float: left;
+}
+/* line 58, ../sass/style.scss */
+.container .right {
+  float: right;
+}
+/* line 63, ../sass/style.scss */
+.container button {
+  background-color: transparent;
+  border: none;
+}
+/* line 68, ../sass/style.scss */
+.container .menu {
+  display: none;
+  background-color: #fff;
+  width: 50%;
+  text-align: center;
+  margin: 100px auto;
+  padding: 50px;
+  overflow: auto;
+}
+/* line 77, ../sass/style.scss */
+.container .menu h2 {
+  padding-bottom: 15px;
+  font-size: 1.5em;
+}
+/* line 82, ../sass/style.scss */
+.container .menu p {
+  font-size: 1.2em;
+  padding-bottom: 8px;
+}
+/* line 86, ../sass/style.scss */
+.container .menu h2, .container .menu p {
+  font-family: "ocr-a-std";
+}
+/* line 92, ../sass/style.scss */
+.container .menu.active {
+  display: block;
 }
