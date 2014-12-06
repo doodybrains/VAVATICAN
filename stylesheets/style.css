@@ -90,16 +90,16 @@ html h4 {
 /* line 76, ../sass/style.scss */
 .container .right {
   float: right;
-  margin-top: 10px;
 }
 /* line 80, ../sass/style.scss */
 .container .right img {
-  margin-bottom: 80px;
+  margin-top: 90px;
+  margin-bottom: 30px;
   margin-right: 20px;
   display: block;
 }
-/* line 87, ../sass/style.scss */
-.container .menu-box {
+/* line 88, ../sass/style.scss */
+.container .menu-box, .container .menu-box-2 {
   display: none;
   width: 40%;
   margin: 0 auto;
@@ -108,28 +108,28 @@ html h4 {
   padding: 30px 10px 10px;
   margin-top: 100px;
 }
-/* line 96, ../sass/style.scss */
-.container .menu-box h2 {
+/* line 97, ../sass/style.scss */
+.container .menu-box h2, .container .menu-box-2 h2 {
   font-size: 1.2em;
   text-align: center;
   margin-bottom: 10px;
 }
 
-/* line 104, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 .menu {
   position: fixed;
-  top: 80px;
+  top: 15px;
   right: 15px;
 }
 
-/* line 110, ../sass/style.scss */
-.button-close {
+/* line 111, ../sass/style.scss */
+.button-close, .button-close-2 {
   cursor: pointer;
   display: block;
   padding: 0 8px 8px 8px;
 }
-/* line 115, ../sass/style.scss */
-.button-close .icon {
+/* line 116, ../sass/style.scss */
+.button-close .icon, .button-close-2 .icon {
   background-image: url("../images/close.png");
   background-repeat: no-repeat;
   height: 60px;
@@ -138,7 +138,7 @@ html h4 {
   display: block;
 }
 
-/* line 125, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 .menu .button-close {
   position: absolute;
   top: 0;
@@ -146,7 +146,7 @@ html h4 {
   display: none;
 }
 
-/* line 132, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 .button {
   position: relative;
   padding: 8px;
@@ -155,7 +155,7 @@ html h4 {
   cursor: pointer;
 }
 
-/* line 140, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 .menu .button {
   position: absolute;
   top: 0;

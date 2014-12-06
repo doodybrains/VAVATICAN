@@ -75,16 +75,17 @@ html {
 
   .right {
     float: right;
-    margin-top: 10px;
+
 
     img {
-      margin-bottom: 80px;
+      margin-top: 90px;
+      margin-bottom: 30px;
       margin-right: 20px;
       display: block;
     }
   }
 
-  .menu-box {
+  .menu-box, .menu-box-2 {
     display: none;
     width: 40%;
     margin: 0 auto;
@@ -103,11 +104,11 @@ html {
 
 .menu {
   position: fixed;
-  top: 80px;
+  top: 15px;
   right: 15px;
 }
 
-.button-close {
+.button-close, .button-close-2 {
   cursor: pointer;
   display: block;
   padding: 0 8px 8px 8px;

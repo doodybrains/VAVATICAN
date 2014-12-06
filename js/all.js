@@ -348,30 +348,63 @@
   })();
 
   this.audioPlayer = new AudioPlayerUI({
-    el: document.getElementById("audio-player"),
+    el: document.getElementById("audio-player-1"),
     songs: [
       {
         image: "images/image.jpg",
         name: "VaVatican - i love you (dora lee)",
         srcs: [
           {
-            src: "SheSnake.mp3",
+            src: "VaVatican-1.mp3",
             type: "audio/mp3"
           }
         ]
-      }, {
-        image: "images/sunhawk-small-2@2x.jpg",
-        name: "Sunhawk - Shotgun Love",
+      }
+    ]
+  });
+
+    this.audioPlayer = new AudioPlayerUI({
+    el: document.getElementById("audio-player-2"),
+    songs: [
+      {
+        image: "images/image.jpg",
+        name: "VaVatican - i love you (dora lee)",
         srcs: [
           {
-            src: "ShotgunLove.mp3",
+            src: "VaVatican-2.mp3",
             type: "audio/mp3"
-          }, {
-            src: "ShotgunLove.m4a",
-            type: "audio/mp4"
-          }, {
-            src: "ShotgunLove.ogg",
-            type: "audio/ogg"
+          }
+        ]
+      }
+    ]
+  });
+
+  this.audioPlayer = new AudioPlayerUI({
+    el: document.getElementById("audio-player-3"),
+    songs: [
+      {
+        image: "images/image.jpg",
+        name: "VaVatican - i love you (dora lee)",
+        srcs: [
+          {
+            src: "VaVatican-3.mp3",
+            type: "audio/mp3"
+          }
+        ]
+      }
+    ]
+  });
+
+  this.audioPlayer = new AudioPlayerUI({
+    el: document.getElementById("audio-player-4"),
+    songs: [
+      {
+        image: "images/image.jpg",
+        name: "VaVatican - i love you (dora lee)",
+        srcs: [
+          {
+            src: "VaVatican-4.mp3",
+            type: "audio/mp3"
           }
         ]
       }
