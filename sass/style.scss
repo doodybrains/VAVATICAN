@@ -18,7 +18,7 @@ a {
 }
 
 html {
-  background: url('../images/image.gif') center center fixed no-repeat;
+  background: url('../images/image.png') center center fixed no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -28,6 +28,14 @@ html {
   h1, h2, h3, h4 {
     margin: 0;
   }
+
+    @media screen and (min-width: 768px) { 
+        background: url('../images/image-small.gif') center center fixed no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
 }
 
   .container {
@@ -43,6 +51,12 @@ html {
         letter-spacing: 5px;
         font-size: 4em;
         color: #fff;
+      }
+
+      p {
+        font-weight: 700;
+        color: #000;
+        text-align: right;
       }
     }
 
@@ -103,6 +117,14 @@ html {
         h2 {
           font-size: .8675em;
           padding: 0 0 20px 0;
+
+          a {
+            color: inherit;
+          }
+
+          a:hover {
+            color: #ff88ff;
+          }
         }
       }
     }
