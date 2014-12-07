@@ -38,126 +38,264 @@ html {
   background-size: cover;
   font-family: "franklin-gothic-urw-comp";
 }
-/* line 27, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
 html h1, html h2, html h3, html h4 {
   margin: 0;
 }
-/* line 31, ../sass/style.scss */
-html h1 {
-  font-size: 3em;
-  color: #fff;
+
+/* line 33, ../sass/style.scss */
+.container {
+  font-family: "jubilat";
 }
 /* line 36, ../sass/style.scss */
-html h6 {
-  font-family: "ocr-a-std";
+.container .left {
+  width: 100%;
+  text-align: center;
 }
 /* line 40, ../sass/style.scss */
-html h5 {
-  font-family: "brandon-grotesque";
+.container .left h1 {
+  font-family: "franklin-gothic-urw-comp";
+  font-weight: 400;
+  letter-spacing: 5px;
+  font-size: 4em;
+  color: #fff;
 }
-/* line 44, ../sass/style.scss */
-html h4 {
-  font-family: "museo-sans-rounded";
+/* line 49, ../sass/style.scss */
+.container .excerpts {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-/* line 50, ../sass/style.scss */
-.container {
-  padding: 15px;
-  font-family: "jubilat";
-  font-weight: 300;
+/* line 78, ../sass/_mixins.scss */
+.container .excerpts:before, .container .excerpts:after {
+  content: "";
+  display: table;
+}
+/* line 83, ../sass/_mixins.scss */
+.container .excerpts:after {
+  clear: both;
+}
+/* line 84, ../sass/_mixins.scss */
+.container .excerpts {
+  *zoom: 1;
 }
 /* line 54, ../sass/style.scss */
-.container p {
-  font-family: "jubilat";
-  font-size: 1em;
+.container .excerpts .excerpt {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0 50px 0;
 }
 /* line 59, ../sass/style.scss */
-.container .title {
-  color: #fff;
-  width: 300px;
+.container .excerpts .excerpt .title {
   text-align: center;
-  margin: 0 auto;
 }
-/* line 65, ../sass/style.scss */
-.container .left {
+/* line 62, ../sass/style.scss */
+.container .excerpts .excerpt .title p {
+  font-family: "franklin-gothic-urw-comp";
+  color: #fff;
+  font-size: 5em;
+}
+/* line 71, ../sass/style.scss */
+.container .buttons {
+  padding: 50px 10px 50px 10px;
+  background-color: #000;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 78, ../sass/_mixins.scss */
+.container .buttons:before, .container .buttons:after {
+  content: "";
+  display: table;
+}
+/* line 83, ../sass/_mixins.scss */
+.container .buttons:after {
+  clear: both;
+}
+/* line 84, ../sass/_mixins.scss */
+.container .buttons {
+  *zoom: 1;
+}
+/* line 78, ../sass/style.scss */
+.container .buttons .button, .container .buttons .button2, .container .buttons .butt {
+  padding: 0 20px 0 20px;
+  width: 25%;
   float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-/* line 70, ../sass/style.scss */
-.container .left p {
-  text-align: right;
+/* line 84, ../sass/style.scss */
+.container .buttons .button img, .container .buttons .button2 img, .container .buttons .butt img {
+  width: 100%;
+}
+/* line 89, ../sass/style.scss */
+.container .buttons .button-close {
+  width: 30%;
+  margin: 0 auto 30px auto;
+}
+/* line 93, ../sass/style.scss */
+.container .buttons .button-close img {
+  width: 100%;
+}
+/* line 98, ../sass/style.scss */
+.container .buttons .menu-box, .container .buttons .menu-box2 {
+  display: none;
   color: #fff;
-}
-/* line 76, ../sass/style.scss */
-.container .right {
-  float: right;
-}
-/* line 80, ../sass/style.scss */
-.container .right img {
-  margin-top: 90px;
-  margin-bottom: 30px;
-  margin-right: 20px;
-  display: block;
-}
-/* line 88, ../sass/style.scss */
-.container .menu-box, .container .menu-box-2 {
-  display: none;
-  width: 40%;
-  margin: 0 auto;
-  background-color: #fff;
-  color: #38A5CD;
-  padding: 30px 10px 10px;
-  margin-top: 100px;
-}
-/* line 97, ../sass/style.scss */
-.container .menu-box h2, .container .menu-box-2 h2 {
-  font-size: 1.2em;
   text-align: center;
-  margin-bottom: 10px;
+}
+/* line 103, ../sass/style.scss */
+.container .buttons .menu-box h2, .container .buttons .menu-box2 h2 {
+  font-size: .8675em;
+  padding: 0 0 20px 0;
 }
 
-/* line 105, ../sass/style.scss */
-.menu {
-  position: fixed;
-  top: 15px;
-  right: 15px;
-}
-
-/* line 111, ../sass/style.scss */
-.button-close, .button-close-2 {
-  cursor: pointer;
-  display: block;
-  padding: 0 8px 8px 8px;
-}
-/* line 116, ../sass/style.scss */
-.button-close .icon, .button-close-2 .icon {
-  background-image: url("../images/close.png");
-  background-repeat: no-repeat;
-  height: 60px;
-  width: 75px;
-  vertical-align: middle;
-  display: block;
-}
-
-/* line 126, ../sass/style.scss */
-.menu .button-close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: none;
-}
-
-/* line 133, ../sass/style.scss */
-.button {
-  position: relative;
-  padding: 8px;
-  width: 75px;
-  height: 60px;
-  cursor: pointer;
-}
-
-/* line 141, ../sass/style.scss */
-.menu .button {
-  position: absolute;
-  top: 0;
-  right: 0;
+@media screen and (min-width: 768px) {
+  /* line 113, ../sass/style.scss */
+  .container {
+    padding: 15px;
+    position: relative;
+    font-weight: 300;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /* line 78, ../sass/_mixins.scss */
+  .container:before, .container:after {
+    content: "";
+    display: table;
+  }
+  /* line 83, ../sass/_mixins.scss */
+  .container:after {
+    clear: both;
+  }
+  /* line 84, ../sass/_mixins.scss */
+  .container {
+    *zoom: 1;
+  }
+  /* line 121, ../sass/style.scss */
+  .container .left {
+    width: 25%;
+    float: left;
+    position: fixed;
+    top: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /* line 78, ../sass/_mixins.scss */
+  .container .left:before, .container .left:after {
+    content: "";
+    display: table;
+  }
+  /* line 83, ../sass/_mixins.scss */
+  .container .left:after {
+    clear: both;
+  }
+  /* line 84, ../sass/_mixins.scss */
+  .container .left {
+    *zoom: 1;
+  }
+  /* line 130, ../sass/style.scss */
+  .container .excerpts {
+    margin-left: 25%;
+    padding-bottom: 300px;
+    width: 50%;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /* line 78, ../sass/_mixins.scss */
+  .container .excerpts:before, .container .excerpts:after {
+    content: "";
+    display: table;
+  }
+  /* line 83, ../sass/_mixins.scss */
+  .container .excerpts:after {
+    clear: both;
+  }
+  /* line 84, ../sass/_mixins.scss */
+  .container .excerpts {
+    *zoom: 1;
+  }
+  /* line 138, ../sass/style.scss */
+  .container .excerpts .excerpt {
+    width: 50%;
+    margin: 0 auto;
+  }
+  /* line 142, ../sass/style.scss */
+  .container .excerpts .excerpt .title {
+    text-align: center;
+  }
+  /* line 145, ../sass/style.scss */
+  .container .excerpts .excerpt .title p {
+    font-family: "franklin-gothic-urw-comp";
+    color: #fff;
+    font-size: 5em;
+  }
+  /* line 154, ../sass/style.scss */
+  .container .buttons {
+    background-color: transparent;
+    width: 25%;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /* line 78, ../sass/_mixins.scss */
+  .container .buttons:before, .container .buttons:after {
+    content: "";
+    display: table;
+  }
+  /* line 83, ../sass/_mixins.scss */
+  .container .buttons:after {
+    clear: both;
+  }
+  /* line 84, ../sass/_mixins.scss */
+  .container .buttons {
+    *zoom: 1;
+  }
+  /* line 161, ../sass/style.scss */
+  .container .buttons .button, .container .buttons .button2, .container .buttons .butt {
+    display: block;
+    float: none;
+    width: 40%;
+    margin: 0 0 50px auto;
+  }
+  /* line 167, ../sass/style.scss */
+  .container .buttons .button img, .container .buttons .button2 img, .container .buttons .butt img {
+    display: block;
+    width: 100%;
+  }
+  /* line 173, ../sass/style.scss */
+  .container .buttons .button-close {
+    width: 40%;
+    margin: 0 0 50px auto;
+  }
+  /* line 177, ../sass/style.scss */
+  .container .buttons .button-close img {
+    width: 100%;
+  }
+  /* line 182, ../sass/style.scss */
+  .container .buttons .menu-box, .container .buttons .menu-box2 {
+    display: none;
+    text-align: right;
+  }
+  /* line 186, ../sass/style.scss */
+  .container .buttons .menu-box h2, .container .buttons .menu-box2 h2 {
+    font-size: 1em;
+    padding: 0 0 20px 0;
+  }
+  /* line 190, ../sass/style.scss */
+  .container .buttons .menu-box h2 a, .container .buttons .menu-box2 h2 a {
+    color: inherit;
+  }
+  /* line 194, ../sass/style.scss */
+  .container .buttons .menu-box h2 a:hover, .container .buttons .menu-box2 h2 a:hover {
+    color: #ff88ff;
+  }
 }
